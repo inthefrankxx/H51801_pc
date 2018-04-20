@@ -1,0 +1,72 @@
+/*重置样式*/
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, input, h6, form, fieldset, legend, img, div { box-sizing: border-box; margin:0; padding:0;}
+
+fieldset, img { border:none; }
+
+img{vertical-align: top;}
+
+em,i,strong,b{ font-style:normal; font-weight:normal; }
+
+ul, ol{ list-style:none; } 
+
+ul, li{list-style:none;} 
+
+a {text-decoration:none;}
+
+.ind{text-indent: 2em;}
+
+.noborder{border: none;}
+
+.nobg{background:none;}
+
+.floatL{float: left;}
+
+.floatR{float: right;}
+
+$w:1200px;
+header{
+    $h:100px;
+	width:100%;
+	height:$h;
+	background: #e9546b;
+	position: relative;
+	.box{
+	    width:$w;
+	    height:$h;
+	    margin:0 auto;
+	    .box_top{
+	    	width: $w;
+	    	height: 27px;
+	    	.span{
+	    		display: block;
+	    		width: 120px;
+	    		height: 27px;
+	    		line-height: 27px;
+	    		color: white;
+	    		font-size: 12px;
+	    		position: absolute;
+	    		left: 880px;
+	    	}
+	    	.link{
+	    		float: right;
+	    	}
+	    }
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
