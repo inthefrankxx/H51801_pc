@@ -29,26 +29,174 @@ header{
 	width:100%;
 	height:$h;
 	background: #e9546b;
-	position: relative;
 	.box{
 	    width:$w;
 	    height:$h;
 	    margin:0 auto;
+	    position: relative;
 	    .box_top{
 	    	width: $w;
 	    	height: 27px;
-	    	.span{
-	    		display: block;
+	    	p{
 	    		width: 120px;
 	    		height: 27px;
 	    		line-height: 27px;
-	    		color: white;
 	    		font-size: 12px;
+	    		color: white;
 	    		position: absolute;
 	    		left: 880px;
+	    		right: 120px;	
 	    	}
 	    	.link{
 	    		float: right;
+	    		width: 100px;
+	    		height: 27px;
+	    		position: relative;
+	    		img{
+	    			position: absolute;
+	    			left: 49px;
+	    			top: 6px;
+	    		}
+	    		a{
+	    			color: white;
+	    			font-size: 12px;
+	    			line-height: 27px;
+	    		}
+	    		.register{
+	    			position: absolute;
+	    			right: 0px;
+	    		}
+	    	}
+	    }
+	    .box_up{
+	    	width: $w;
+	    	height: 73px;
+	    	position: relative;
+	    	background-image: url(../img/icons/icon_new.gif);
+	    	background-repeat: no-repeat;
+	    	background-position: 492px 20px;
+	    	img{
+	    		margin-left: 21px;
+	    	}
+	    	.nav{
+				position: absolute;
+				bottom: 0;
+				left: 241px;
+				width: 700px;
+				height: 24px;
+				padding-bottom: 47px;
+				zoom: 1;
+				img{
+					position: absolute;
+					bottom: 0;
+				}
+				.p1{
+					left: 13px;
+					display: none;
+				}
+				.p2{
+					left: 21px;
+					display: none;
+				}
+				.p3{
+					left: 13px;
+					display: none;
+				}
+				#cakelist{
+					&:hover{
+						.p1{
+							display:block;
+						}
+					}
+				}
+				#inlife{
+					&:hover{
+						.p2{
+							display:block;
+						}
+					}
+				}
+				#qiyezhaungqu{
+					&:hover{
+						.p3{
+							display:block;
+						}
+					}
+				}
+				li{
+					position: relative;
+					display: block;
+					float: left;
+					width: 90px;
+					height: 47px;
+					margin-right: 5px;
+					&:hover{
+						.hide{
+							border:1px solid;
+						}
+					}
+				} 
+				.sub{
+					&:hover{
+						ul{
+							display: block;
+						}
+					}
+				}
+				li .subnav{
+					display: none;
+					position: absolute;
+					top: 46px;
+					left: 0;
+					z-index: 99999;
+					width: 148px;
+					background-color: #fff;
+					border: 1px solid #e9546b;
+					border-top: none;
+					border-radius: 0 0 2px 2px;
+					li{
+						width: 100%;
+						height: 40px;
+						border-top: 1px solid #f0f0f0;
+						color: #505050;
+						position: relative;
+						&:hover{
+							a{
+								background:red;
+							}
+							span{
+								display: block;
+							}
+						}
+					}
+					a{
+						display: block;
+						width: 146px;
+						height: 38px;
+						line-height: 40px;
+						font-size: 12px;
+						text-align: center;
+						color: inherit;
+					} 
+				}
+				li a{
+					display: block;
+					width: 88px;
+					height: 22px;
+					text-align: center;
+					line-height: 22px;
+					font-size: 14px;
+					color: #fff;
+					border: 1px solid transparent;
+					border-radius: 2px;
+				}
+				span{
+						position: absolute;
+						display: none;
+						left: 120px;
+						top: 9px;
+						color: white;
+					}
 	    	}
 	    }
 	}
