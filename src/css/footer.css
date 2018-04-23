@@ -1,32 +1,103 @@
-/*
-Error: Invalid CSS after "footer.scss": expected "{", was ""
-        on line 1 of E:\wamp\www\PC-project\src\sass\footer.scss
+footer .footer-body {
+  width: 100%;
+  background-color: #f5f5f5; }
+  footer .footer-body .container {
+    position: relative;
+    width: 1200px;
+    margin: 0 auto; }
+    footer .footer-body .container .logo {
+      position: absolute;
+      top: 90px;
+      left: 41px;
+      width: 220px;
+      height: 69px;
+      background-image: url(../img/logo_footer.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 50%; }
+    footer .footer-body .container .content {
+      width: 440px;
+      height: 250px;
+      margin: 0 auto; }
+      footer .footer-body .container .content .nav {
+        width: 100%;
+        padding-top: 60px; }
+        footer .footer-body .container .content .nav a:hover {
+          color: #e9546b; }
+        footer .footer-body .container .content .nav span {
+          margin: 0 10px; }
+      footer .footer-body .container .content .hotline {
+        margin-top: 20px; }
+        footer .footer-body .container .content .hotline span {
+          display: inline-block;
+          float: left;
+          color: #e9546b;
+          line-height: 24px; }
+          footer .footer-body .container .content .hotline span.tel {
+            font-size: 24px;
+            font-weight: 700;
+            margin-left: 10px; }
+      footer .footer-body .container .content .stock-code {
+        margin-top: 10px;
+        line-height: 24px;
+        color: #635859; }
+      footer .footer-body .container .content .third-party {
+        width: 100%;
+        margin-top: 46px; }
+        footer .footer-body .container .content .third-party a {
+          display: block;
+          float: left;
+          width: 50px;
+          height: 50px;
+          margin-right: 5px;
+          border-radius: 50%;
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: 50%;
+          transform-origin: center center;
+          transition: all 1s; }
+          footer .footer-body .container .content .third-party a.wechat {
+            background-image: url(../img/third_party_wechat.png); }
+          footer .footer-body .container .content .third-party a.sina {
+            background-image: url(../img/third_party_sina.png); }
+          footer .footer-body .container .content .third-party a.qq {
+            background-image: url(../img/third_party_qq.png); }
+          footer .footer-body .container .content .third-party a.dianping {
+            background-image: url(../img/third_party_dianping.png); }
+          footer .footer-body .container .content .third-party a:hover {
+            transform: rotate(1turn); }
+    footer .footer-body .container .qrcode {
+      position: absolute;
+      top: 42px;
+      right: 49px;
+      width: 140px; }
+      footer .footer-body .container .qrcode .img {
+        width: 140px;
+        height: 140px;
+        background-image: url(../img/qrcode_footer.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: 50%; }
+      footer .footer-body .container .qrcode .text {
+        color: #635859;
+        line-height: 38px;
+        text-align: center; }
+footer .footer-copyright {
+  width: 100%; }
+  footer .footer-copyright .container {
+    width: 1200px;
+    height: 70px;
+    margin: 0 auto; }
+    footer .footer-copyright .container p {
+      color: #b4b4b4;
+      text-align: center;
+      line-height: 46px; }
 
-1: footer.scss
+footer .footer-body .container .content .nav a, footer .footer-body .container .content .nav span {
+  display: inline-block;
+  float: left;
+  line-height: 20px;
+  font-size: 16px;
+  color: #635859; }
 
-Backtrace:
-E:\wamp\www\PC-project\src\sass\footer.scss:1
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1165:in `expected'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1101:in `expected'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:1096:in `tok!'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:641:in `block'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:635:in `ruleset'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:660:in `block_child'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:650:in `block_contents'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:117:in `stylesheet'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/scss/parser.rb:42:in `parse'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:393:in `_to_tree'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:368:in `_render_with_sourcemap'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/engine.rb:285:in `render_with_sourcemap'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:396:in `run'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/sass_scss.rb:62:in `process_result'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:52:in `parse'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/lib/sass/exec/base.rb:19:in `parse!'
-F:/Temp/Koala/rubygems/gems/sass-3.4.9/bin/sass:13:in `<top (required)>'
-F:/Temp/Koala/bin/sass:18:in `load'
-F:/Temp/Koala/bin/sass:18:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"footer.scss\": expected \"{\", was \"\"\A         on line 1 of E:\wamp\www\PC-project\src\sass\footer.scss\A \A 1: footer.scss"; }
+/*# sourceMappingURL=footer.css.map */

@@ -5,10 +5,14 @@ require.config({
 		template : "lib/art-template/template-web",
 		cookie : "lib/jquery-plugins/jquery.cookie",
 		zoom : "lib/jquery-plugins/jquery.elevateZoom-3.0.8.min",
-		loadHF : "js/loadHeaderFooter"
+		loadHF : "js/loadHeaderFooter",
+		xm : "lib/jquery-plugins/xm-carousel/jquery.xm-carousel"
 	},
 	shim : {
 		zoom : {
+			deps : ["jquery"]
+		}
+		xm : {
 			deps : ["jquery"]
 		}
 	}
