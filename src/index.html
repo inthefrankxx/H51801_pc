@@ -3,15 +3,82 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="css/header.css">
-	<link rel="stylesheet" type="text/css" href="css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/css/main.css">
+	<link rel="stylesheet" href="/css/lunbo.css">
 </head>
 <body>
-	<header></header>
+	<header>
+		
+	</header>
 	<main>
-
-	<main>
-	<footer></footer>
-	<script src="lib/requirejs/require.js" data-main="js/index"></script>
+		<div class="banner" id="b04">
+		    <ul>
+		        <li><img src="img/lunbo1.jpg" alt="" width="1262" height="682" ></li>
+		        <li><img src="img/lunbo2.jpg" alt="" width="1262" height="682" ></li>
+		        <li><img src="img/lunbo3.jpg" alt="" width="1262" height="682" ></li>
+		    </ul>
+		    <a href="javascript:void(0);" class="unslider-arrow04 prev">
+		    		<img class="arrow" id="al" src="img/icons/icon_favor_selected.png" alt="prev" width="20" height="35">
+		    </a>
+		    <a href="javascript:void(0);" class="unslider-arrow04 next">
+		    		<img class="arrow" id="ar" src="img/icons/icon_favor_selected.png" alt="next" width="20" height="37">
+		    </a>
+	</div>
+		<div class="setion our-inspiration">
+			<div class="entries clearfix">
+				<a href="/html/list.html" class="entry szone"></a>
+				<a href="/html/list.html" target="_blank" class="entry new"></a>
+				<a href="/html/list.html" class="entry strawberry"></a>
+				<a href="/html/list.html" class="entry card"></a>
+				<a href="/html/list.html" class="entry ranking"></a>
+			</div>
+		</div>
+		<div class="section">
+                <div class="section-title">
+                    <p class="cn">当季热卖</p>
+                    <p class="en">BEST CHOICE</p>
+                </div>
+       </div>
+       <div class="list">
+       </div>
+       <script type="text/html" id="prod_temp">
+				{{each products prod}}
+					<li><a href="/html/detail.html">
+						<img src="{{prod.img}}" class="img-responsive"/>
+						<span class="btn5">{{prod.price}}</span>
+						<p>{{prod.title}}</p>
+						<span class="tra">{{prod.trait}}</span>
+						<span class="id" style="display: none">{{prod.pid}}</span></a>
+						<a href="#" class="join-basket">
+							<img src="/img/icons/icon_join_basket_rect.png" class="imgs">
+						</a>
+					</li>
+				{{/each}}
+		</script>
+        <div class="ads-container clearfix">
+                
+                <a href="#" data-adtype="商品" data-adtitle="抹茶利兹">
+                    <img src="img/one2017121118105111794.jpg" alt="">
+                </a>
+                
+                <a href="#" data-adtype="商品" data-adtitle="简爱">
+                    <img src="img/one2017062817195140684.jpg" alt="">
+                </a>
+                
+                <a href="#" data-adtype="商品" data-adtitle="奶香巧克力">
+                    <img src="img/one2017062817214296575.jpg" alt="">
+                </a>
+           </div>
+           <div class="qrcode-sw">
+					<img src="/img/index/qrcode.gif" alt="">
+					<a href="javascript:;" class="qrcode-close"></a>
+			</div>
+	</main>
+	<footer>
+		
+	</footer>
+	<script src="lib/requirejs/require.js" data-main="/js/index"></script>
 </body>
 </html>

@@ -3,7 +3,7 @@ let gulp = require("gulp"),
 	uglifyJS = require("gulp-uglify"),
 	babel = require("gulp-babel"),
 	htmlmin = require("gulp-htmlmin"),
-	connect = require("gulp-connect"),
+	connect = require("gulp-connect"), 
 	dest = "dist"; // 项目部署目标目录
 
 // 启动服务器
@@ -43,8 +43,8 @@ gulp.task("html", function(){
 
 // 复制 images、lib、mock文件夹下所有资源
 gulp.task("copy-images", function(){
-	gulp.src("./src/images/**/*.*")
-		.pipe(gulp.dest("./"+ dest +"/images"))
+	gulp.src("./src/img/**/*.*")
+		.pipe(gulp.dest("./"+ dest +"/img"))
 		.pipe(connect.reload());
 });
 gulp.task("copy-lib", function(){

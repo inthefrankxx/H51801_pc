@@ -1,0 +1,21 @@
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":{
+		"products":[
+			{"pid":1, "title":"至爱红丝绒Love Red Velevet","price":"134.00", "img":"/img/data1.jpg", "trait":"如丝绒般的柔软口感"},
+			{"pid":2, "title":"玛格丽特 Princess Margaret","price":"198.00", "img":"/img/data2.jpg", "trait":"吹拂的风是玛格丽特柔软的芬芳"},
+			{"pid":3, "title":"经典奶香 Classic Cream","price":"134.00", "img":"/img/data3.jpg", "trait":"记忆中的绵密口感，沁着浓郁奶香"},
+			{"pid":4, "title":"女王芝士 Queen Cheese cake","price":"198.00", "img":"/img/data4.jpg", "trait":"从第一口‘侵略’到最后一口"},
+			{"pid":5, "title":"少女棒棒糖 Lolipop","price":"198.00", "img":"/img/data5.jpg", "trait":"给你一颗甜甜的棒棒糖，带来芒果的顽皮"},
+			{"pid":6, "title":"奶香巧克力 chocolate cake","price":"198.00", "img":"/img/data6.jpg", "trait":"只留下奶香巧克力化也化不开的醇香"},
+			{"pid":7, "title":"浓情巧克力 Love in Chocolate","price":"198.00", "img":"/img/data7.jpg", "trait":"每一口都在辨别那浓滑如丝的滋味"},
+			{"pid":8, "title":"樱桃冻芝士 Cherry Cheese cake","price":"198.00", "img":"/img/data8.jpg", "trait":"炎炎夏日的最佳选择"},
+			{"pid":9, "title":"至爱红丝绒Love Red Velevet","price":"134.00", "img":"/img/data9.jpg", "trait":"DIY定制，只给挚爱的你"},
+			{"pid":10, "title":"爱丁堡之恋 Love in Edinburgh","price":"134.00", "img":"/img/data10.jpg", "trait":"纯正芝士与醇香奶油的梦幻组合"},
+			{"pid":11, "title":"伦敦之焰 Flame of London","price":"134.00", "img":"/img/data11.jpg", "trait":"火突破巧克力的拥抱，烈焰燃烧"},
+			{"pid":12, "title":"蓝莓优格 Blueberry Cheese cake","price":"134.00", "img":"/img/data12.jpg", "trait":"蓝莓优格永远保持一种特别优雅的格调"}
+
+		]
+	}
+}

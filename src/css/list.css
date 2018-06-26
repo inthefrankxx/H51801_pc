@@ -1,0 +1,87 @@
+main {
+  width: 100%;
+  height: 1358px; }
+  main .box {
+    width: 100%;
+    height: 1336px;
+    margin: 0 auto; }
+    main .box .list {
+      width: 1200px;
+      height: 81px;
+      margin: 40px auto;
+      border-bottom: 1px solid; }
+      main .box .list ul {
+        width: 1200px;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center; }
+        main .box .list ul li {
+          width: 80px;
+          height: 20px;
+          font-size: 12px;
+          text-align: center;
+          cursor: pointer; }
+          main .box .list ul li:hover {
+            background: red;
+            color: white; }
+    main .box .goods {
+      width: 100%;
+      height: 1222px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around; }
+      main .box .goods .describe {
+        width: 300px;
+        height: 300px;
+        border: 1px dashed red;
+        margin: 100 auto;
+        border-radius: 50%;
+        background: orange;
+        opacity: 0.5;
+        display: block; }
+        main .box .goods .describe span {
+          color: green;
+          text-align: center;
+          line-height: 300px;
+          display: block; }
+      main .box .goods li {
+        width: 292px;
+        height: 400px;
+        position: relative; }
+        main .box .goods li:hover {
+          border: 1px solid #e9546b; }
+        main .box .goods li img {
+          position: relative;
+          width: 290px;
+          height: 291px;
+          overflow: hidden; }
+        main .box .goods li .btn5 {
+          color: red;
+          font-size: 14px;
+          margin-left: 20px; }
+        main .box .goods li p {
+          margin-left: 20px;
+          font-size: 14px;
+          line-height: 30px;
+          color: #635859; }
+        main .box .goods li .tra {
+          padding: 14px 0 11px;
+          font-size: 14px;
+          color: #b5b5b5;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          overflow: hidden;
+          margin-left: 20px; }
+        main .box .goods li a {
+          width: 28px;
+          height: 28px; }
+          main .box .goods li a .imgs {
+            position: absolute;
+            right: 20px;
+            bottom: 15px;
+            width: 28px;
+            height: 28px; }
+
+/*# sourceMappingURL=list.css.map */

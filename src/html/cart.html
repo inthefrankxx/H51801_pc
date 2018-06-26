@@ -3,13 +3,62 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" type="text/css" href="../css/header.css">
-	<link rel="stylesheet" type="text/css" href="../css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/css/cart.css">
 </head>
 <body>
 	<header></header>
-	<main></main>
+	<main>
+		<button class="jiesuan"><a href="/html/confirm.html">去结算</a></button>
+	<div class="men cart cart_empty">
+        <a href="/index.html" class="basket"></a>
+    </div>
+    <div class="cart prod_list">
+    	
+    </div>
+    <script type="text/html" id="prod_list_temp">
+        <div class="row">   
+    	<table class="table table-bordered table-hover">
+    		<thead>
+    			<tr>
+	    			<th class="col-md-1"><label><input type="checkbox" id="ck_all">全选</label></th>
+	    			<th class="col-md-1">商品图片</th>
+	    			<th class="col-md-5">描述</th>
+	    			<th class="col-md-1">价格</th>
+	    			<th class="col-md-2">数量</th>
+	    			<th class="col-md-1">小计</th>
+	    			<th class="col-md-1">操作</th>
+	    		</tr>
+    		</thead>
+    		<tbody class="cart_body">
+    			{{each products prod}}
+    			<tr>
+    				<td><input type="checkbox" class="ck_prod"></td>
+    				<td><img class="prod_img" src="{{prod.img}}">{{}}</td>
+    				<td class="title">{{prod.title}}</td>
+    				<td class="price">{{prod.price}}</td>
+    				<td class="input-group">
+    					<span class="input-group-addon minus" data-id="{{prod.pid}}">-</span>
+    					<input type="text" value="{{prod.amount}}" data-id="{{prod.pid}}" class="form-control amount text-center">
+    					<span class="input-group-addon add" data-id="{{prod.pid}}">+</span>
+    				</td>
+    				<td class="sub">{{(prod.price * prod.amount).toFixed(2)}}</td>
+    				<td><a href="javascript:void(0);" class="del" data-id="{{prod.pid}}">删除</a></td>
+    			</tr>
+    			{{/each}}
+    		</tbody>
+    		<tfoot>
+    			<tr>
+    				<td>合计</td>
+    				<td colspan="6" class="total">$0.00</td>
+    			</tr>
+    		</tfoot>
+    	</table>
+        </div>
+    </script>
+	</main>
 	<footer></footer>
-	<script src="../lib/requirejs/require.js" data-main="js/cart"></script>
+	<script src="/lib/requirejs/require.js" data-main="/js/cart"></script>
 </body>
 </html>

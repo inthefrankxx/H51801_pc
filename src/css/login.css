@@ -1,0 +1,35 @@
+main {
+  width: 100%;
+  height: 416px; }
+  main .box {
+    width: 1200px;
+    height: 416px;
+    margin: 0 auto; }
+    main .box .left {
+      width: 572px;
+      height: 348px;
+      float: left; }
+      main .box .left img {
+        width: 665px;
+        height: 416px; }
+    main .box .right {
+      width: 580px;
+      height: 520px;
+      float: right; }
+      main .box .right form {
+        width: 490px;
+        height: 416px;
+        margin: 0 auto; }
+        main .box .right form input {
+          width: 382px;
+          height: 32px;
+          margin: 25px 55px; }
+        main .box .right form .hint {
+          width: 382px;
+          height: 50px;
+          background: orange;
+          border: 1px solid red;
+          color: white;
+          text-align: center; }
+
+/*# sourceMappingURL=login.css.map */

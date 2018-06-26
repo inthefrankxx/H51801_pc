@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/css/list.css">
+</head>
+<body>
+	<header></header>
+	<main>
+		<div class="box">
+			<div class="list">
+				<ul>
+					<li>商品：</li>
+					<li class="dj">全部</li>
+					<li class="dj">芝士系列</li>
+					<li class="dj">巧克力系列</li>
+					<li class="dj">拿破仑系列</li>
+					<li class="dj">慕斯系列</li>
+					<li class="dj">乳脂系列</li>
+					<li class="dj">选拼系列</li>
+					<li class="dj">星座系列</li>
+					<li class="dj">阿狸系列</li>
+					<li class="dj">惊喜系列</li>
+					<li class="dj">定制系列</li>
+				</ul>
+				<ul>
+					<li>口味：</li>
+					<li class="dj">拿破仑</li>
+					<li class="dj">水果</li>
+					<li class="dj">芝士</li>
+					<li class="dj">巧克力</li>
+					<li class="dj">慕斯</li>
+					<li class="dj">咖啡</li>
+					<li class="dj">鲜奶</li>
+					<li class="dj">无糖</li>
+				</ul>
+			</div>
+			<div class="goods">
+				<div class="describe">
+						<span>请选择你喜欢的种类</span>
+				</div>
+			</div>
+			<script type="text/html" id="prod_temp">
+				{{each products prod}}
+				<li>
+					<a href="/html/detail.html">
+						<img src="{{prod.img}}" class="img-responsive"/>
+						<span class="btn5">{{prod.price}}</span>
+						<p>{{prod.title}}</p>
+						<span class="tra">{{prod.trait}}</span>
+						<span class="id" style="display: none">{{prod.pid}}</span>
+					</a>
+					<a href="#" class="join-basket">
+						<img src="/img/icons/icon_join_basket_rect.png" class="imgs">
+					</a>
+				</li>
+			{{/each}}
+			</script>
+		</div>
+	</main>
+	<footer></footer>
+	<script src="/lib/requirejs/require.js" data-main="/js/list"></script>
+</body>
+</html>

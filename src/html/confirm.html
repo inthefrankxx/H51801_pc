@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="/css/header.css">
+	<link rel="stylesheet" type="text/css" href="/css/footer.css">
+	<link rel="stylesheet" type="text/css" href="/css/confirm.css">
+</head>
+<body>
+	<header></header>
+	<main>
+				<div class="basket-header">
+                    <div class="title">
+                        <h2>SHOPPING BASKET</h2>
+                        <p><span>购物篮</span></p>
+                    </div>
+                    <div class="process clearfix">
+                        <div class="step step1 active">
+                            <p>我的购物篮</p>
+                        </div>
+                        <div class="step step2">
+                            <p>填写和提交订单信息</p>
+                        </div>
+                        <div class="step step3">
+                            <p>成功提交订单</p>
+                        </div>
+                        <div class="line line1 active"></div>
+                        <div class="line line2"></div>
+                    </div>
+                </div>
+
+                 <div class="cart prod_list">
+                 </div>
+    <script type="text/html" id="prod_list_temp">
+        <div class="row">   
+    	<table class="table table-bordered table-hover">
+    		<thead>
+    			<tr>
+	    			<th class="col-md-1"><label><input type="checkbox" id="ck_all">全选</label></th>
+	    			<th class="col-md-1">商品图片</th>
+	    			<th class="col-md-5">描述</th>
+	    			<th class="col-md-1">价格</th>
+	    			<th class="col-md-2">数量</th>
+	    			<th class="col-md-1">小计</th>
+	    			<th class="col-md-1">操作</th>
+	    		</tr>
+    		</thead>
+    		<tbody class="cart_body">
+    			{{each products prod}}
+    			<tr id="tr">
+    				<td><input type="checkbox" class="ck_prod"></td>
+    				<td><img class="prod_img" src="{{prod.img}}">{{}}</td>
+    				<td class="title">{{prod.title}}</td>
+    				<td class="price">{{prod.price}}</td>
+    				<td class="input-group">
+    					<input type="text" value="{{prod.amount}}" data-id="{{prod.pid}}" class="form-control amount text-center">
+    				</td>
+    				<td class="sub">{{(prod.price * prod.amount)}}</td>
+    				<td><a href="javascript:void(0);" class="del" data-id="{{prod.pid}}">删除</a></td>
+    			</tr>
+    			{{/each}}
+    		</tbody>
+    		<tfoot>
+    			<tr>
+    				<td id="heji">合计</td>
+    				<td colspan="6" class="total">$0.00</td>
+    			</tr>
+    		</tfoot>
+    	</table>
+        </div>
+    </script>
+			<div class="address">
+                <h1>选择收货地址</h1>
+                <div class="select">
+                <select id="province"><option>请选择省份</option></select>
+                <select id="city"><option>请选择城市</option></select>
+                <select id="district"><option>请选择区县</option></select>
+                </div>
+				<input type="text" placeholder="配送具体地址"></br>
+				<input type="text" placeholder="配送时间">
+				<input type="submit" value="提交订单" class="submit">
+			</div>
+	</main>
+	<footer></footer>
+	<script src="/lib/requirejs/require.js" data-main="/js/confirm"></script>
+</body>
+</html>

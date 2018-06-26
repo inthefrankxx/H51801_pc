@@ -1,0 +1,75 @@
+main{
+	position: relative;
+	.jiesuan{
+		display: block;
+		width: 100px;
+		height: 50px;
+		color: black;
+		text-align: center;
+		line-height: 50px;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		font-size: 20px;
+		background: black;
+		a{
+			color: #fff;
+			font-weight: bolder;
+		}
+
+	}
+		.cart{
+			.basket{
+				display: block;
+			    width: 600px;
+			    height: 300px;
+			    margin: 100px auto;
+			    background-image: url(/img/basket.png);
+			    background-repeat: no-repeat;
+			    background-size: cover;
+			    background-position: 50%;
+			    border: 1px solid;
+			}
+			.row{
+				margin: 0 auto;
+				table{
+					margin: 0 auto;
+					th{
+						color: brown;
+					}
+					.title{
+						color: orange;
+						font-size: 14px;
+					}
+					.price{
+						color:red;
+						font-size: 12px;
+					}
+					.del{
+						font-size: 14px;
+						color: red;
+					}
+					.input-group{
+						span{
+							width: 20px;
+							display: inline-block;
+							background: black;
+							border: 1px solid;
+							text-align: center;
+							color: white;
+							cursor: pointer;
+						}
+						.amount{
+							text-align: center;
+						}
+					}
+					.cart_body{
+						img{
+							width: 100px;
+							height: 100px;
+						}
+					}
+				}
+			}
+		}
+	}

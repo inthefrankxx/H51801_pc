@@ -1,7 +1,6 @@
 {
   "name": "pc-project",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,10 +10,21 @@
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-preset-env": "^1.6.1",
+    "gulp": "^3.9.1",
     "gulp-babel": "^7.0.1",
+    "gulp-clean-css": "^3.9.4",
     "gulp-connect": "^5.5.0",
     "gulp-htmlmin": "^4.0.0",
     "gulp-sass": "^4.0.1",
-    "node-sass": "^4.8.3"
-  }
+    "gulp-uglify": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/inthefrankxx/H51801_pc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/inthefrankxx/H51801_pc/issues"
+  },
+  "homepage": "https://github.com/inthefrankxx/H51801_pc#readme",
+  "description": ""
 }

@@ -1,0 +1,269 @@
+main {
+  width: 100%;
+  height: 100%; }
+  main .product_intro {
+    width: 1200px;
+    height: 764px;
+    background: #fff;
+    margin: 40px auto 0;
+    padding-bottom: 60px; }
+    main .product_intro .left {
+      width: 540px;
+      height: 540px;
+      float: left; }
+    main .product_intro .right {
+      width: 580px;
+      height: 573px;
+      float: right; }
+      main .product_intro .right > .title {
+        width: 100%;
+        line-height: 40px;
+        font-size: 24px;
+        color: #45515e; }
+        main .product_intro .right > .title span {
+          display: inline-block;
+          float: left; }
+          main .product_intro .right > .title span.en {
+            margin-left: 26px;
+            font-size: 20px; }
+      main .product_intro .right > .desc {
+        width: 100%;
+        padding: 8px 0 24px;
+        color: #b5b5b5;
+        border-bottom: 1px dotted #b3a3a3;
+        display: grid; }
+        main .product_intro .right > .desc p {
+          line-height: 24px; }
+          main .product_intro .right > .desc p.promotion-tip {
+            padding-top: 10px;
+            color: #e9546b;
+            line-height: 20px; }
+            main .product_intro .right > .desc p.promotion-tip.title {
+              font-weight: bold; }
+      main .product_intro .right .specific-wrap {
+        width: 100%;
+        padding-top: 24px;
+        height: 185px;
+        border-bottom: 1px dotted #b3a3a3; }
+        main .product_intro .right .specific-wrap .section {
+          width: 100%;
+          margin-bottom: 20px; }
+          main .product_intro .right .specific-wrap .section .title {
+            float: left;
+            width: 50px;
+            line-height: 45px;
+            color: #505050; }
+          main .product_intro .right .specific-wrap .section .content {
+            float: right;
+            width: 520px; }
+        main .product_intro .right .specific-wrap .specifics .spec {
+          position: relative;
+          display: block;
+          float: left;
+          width: 129px;
+          height: 45px;
+          margin-bottom: 1px;
+          line-height: 45px;
+          text-align: center;
+          border-left: 1px solid #fff;
+          font-size: 16px;
+          color: #45515e;
+          background-color: #f5f5f5;
+          cursor: pointer; }
+          main .product_intro .right .specific-wrap .specifics .spec.special:before {
+            display: block;
+            position: absolute;
+            top: -14px;
+            right: 2px;
+            width: 45px;
+            height: 40px;
+            content: '';
+            background-image: url("/img/detail/icon_special.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center; }
+        main .product_intro .right .specific-wrap .types li {
+          position: relative;
+          width: 100%;
+          height: 45px;
+          color: #45515e;
+          background-color: #f5f5f5;
+          cursor: pointer;
+          overflow: hidden; }
+          main .product_intro .right .specific-wrap .types li .oldPrice {
+            float: left;
+            margin-top: 2px;
+            margin-left: 45px;
+            margin-right: -10px;
+            font-size: 16px;
+            text-decoration: line-through; }
+            main .product_intro .right .specific-wrap .types li .oldPrice i {
+              font-size: 16px;
+              text-decoration: line-through; }
+          main .product_intro .right .specific-wrap .types li .price {
+            float: left;
+            margin-left: 45px;
+            font-size: 18px; }
+          main .product_intro .right .specific-wrap .types li .name {
+            float: right;
+            margin-right: 66px;
+            font-size: 16px; }
+          main .product_intro .right .specific-wrap .types li .radio {
+            display: block;
+            position: absolute;
+            top: 11px;
+            right: 25px;
+            width: 24px;
+            height: 24px;
+            background-image: url("/img/icons/icon_radio_detail.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center; }
+          main .product_intro .right .specific-wrap .types li.checked {
+            color: #fff;
+            background-color: #e9546b; }
+            main .product_intro .right .specific-wrap .types li.checked i {
+              font-size: 28px; }
+            main .product_intro .right .specific-wrap .types li.checked .oldPrice {
+              float: left;
+              margin-top: 6px;
+              margin-left: 45px;
+              margin-right: -15px;
+              font-size: 18px;
+              text-decoration: line-through; }
+              main .product_intro .right .specific-wrap .types li.checked .oldPrice i {
+                font-size: 18px;
+                text-decoration: line-through; }
+            main .product_intro .right .specific-wrap .types li.checked .radio {
+              background-image: url("/img/icons/icon_radio_detail_checked.png"); }
+          main .product_intro .right .specific-wrap .types li i {
+            font-style: normal; }
+      main .product_intro .right .amount {
+        width: 100%;
+        padding: 27px 0; }
+        main .product_intro .right .amount .title {
+          float: left;
+          width: 50px;
+          height: 35px;
+          line-height: 35px;
+          color: #505050; }
+        main .product_intro .right .amount .content {
+          position: relative;
+          float: left;
+          width: 230px;
+          height: 35px; }
+          main .product_intro .right .amount .content .amount-wrap {
+            width: 140px;
+            height: 35px;
+            margin: 0 auto;
+            border: 1px solid #45515e; }
+            main .product_intro .right .amount .content .amount-wrap .txt-amount {
+              border: none;
+              outline: none;
+              -webkit-appearance: none;
+              width: 138px;
+              height: 33px;
+              line-height: 33px;
+              text-align: center; }
+          main .product_intro .right .amount .content .btn {
+            display: block;
+            position: absolute;
+            top: 5px;
+            width: 25px;
+            height: 25px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+            border-radius: 50%; }
+          main .product_intro .right .amount .content .btn-sub {
+            left: 10px;
+            background-image: url("/img/icons/icon_sub_enabled.png"); }
+            main .product_intro .right .amount .content .btn-sub.disabled {
+              background-image: url("/img/icons/icon_sub_disabled.png"); }
+          main .product_intro .right .amount .content .btn-add {
+            right: 10px;
+            background-image: url("/img/icons/icon_add_enabled.png"); }
+            main .product_intro .right .amount .content .btn-add.disabled {
+              background-image: url("/img/icons/icon_add_disabled.png"); }
+      main .product_intro .right .operates {
+        width: 100%; }
+        main .product_intro .right .operates .btn {
+          display: block;
+          float: left;
+          width: 230px;
+          height: 50px;
+          line-height: 50px;
+          text-align: center;
+          border-radius: 2px;
+          font-size: 18px;
+          color: #fff; }
+          main .product_intro .right .operates .btn:hover {
+            text-decoration: underline; }
+        main .product_intro .right .operates .favor {
+          width: 40px;
+          margin-left: 10px;
+          position: relative;
+          left: -282px;
+          top: 57px; }
+          main .product_intro .right .operates .favor .img {
+            display: block;
+            width: 40px;
+            height: 34px;
+            background-image: url("/img/icons/icon_favor_hover.png");
+            background-repeat: no-repeat;
+            background-size: 34px 31px;
+            background-position: center center; }
+          main .product_intro .right .operates .favor .txt {
+            display: block;
+            width: 100%;
+            line-height: 16px;
+            color: #c8c8c8;
+            font-size: 14px; }
+          main .product_intro .right .operates .favor.selected .img {
+            background-image: url("/img/icons/icon_detail_favor_selected.png"); }
+          main .product_intro .right .operates .favor.selected .txt {
+            color: #e9546b; }
+        main .product_intro .right .operates .add-basket {
+          margin-left: 58px;
+          background-color: #fb657e; }
+        main .product_intro .right .operates .buy-immediate {
+          margin-left: 20px;
+          background-color: #e9546b; }
+      main .product_intro .right .qrcode-scan {
+        position: absolute;
+        top: -30px;
+        right: 10px;
+        z-index: 9;
+        width: 150px;
+        height: 40px; }
+        main .product_intro .right .qrcode-scan:after {
+          display: block;
+          position: absolute;
+          top: 50%;
+          left: 14px;
+          width: 20px;
+          height: 20px;
+          margin-top: -10px;
+          content: '';
+          background-image: url("/img/icons/icon_favor_hover.png");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center center; }
+        main .product_intro .right .qrcode-scan p {
+          padding-left: 40px;
+          line-height: 40px;
+          color: #505050; }
+        main .product_intro .right .qrcode-scan:hover {
+          background-color: #f0f0f0; }
+        main .product_intro .right .qrcode-scan .qrcode {
+          display: none;
+          position: absolute;
+          bottom: -150px;
+          left: 0;
+          width: 148px;
+          height: 148px;
+          border: 1px solid #f0f0f0; }
+          main .product_intro .right .qrcode-scan .qrcode img {
+            width: 100%; }
+
+/*# sourceMappingURL=detail.css.map */
