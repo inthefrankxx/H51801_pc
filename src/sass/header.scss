@@ -75,94 +75,6 @@ header{
 	    	background-image: url(../img/icons/icon_new.gif);
 	    	background-repeat: no-repeat;
 	    	background-position: 492px 20px;
-	    	.locator{
-	    		position: absolute;
-			    right: 0;
-			    bottom: 20px;
-			    width: 62px;
-			    height: 24px;
-			    padding-right: 20px;
-			    .content{
-			    	display: none;
-				    position: absolute;
-				    top: 44px;
-				    right: 10px;
-				    z-index: 99999;
-				    width: 288px;
-				    border: 1px solid #e9546b;
-				    border-top: none;
-				    font-size: 14px;
-				    color: #515151;
-				    background-color: #fff;
-				    ul{
-				    	width: 100%;
-				    	li{
-				    		&:hover{
-				    			background-color:#e9546b;
-				    			color: #fff;
-				    		}
-				    	}
-				    	li{
-				    		display: inline-block;
-						    float: left;
-						    width: 50px;
-						    height: 25px;
-						    margin: 0 0 15px 17px;
-						    line-height: 25px;
-						    text-align: center;
-						    border-radius: 2px;
-    						cursor: pointer;
-				    	}
-				    	li{
-				    		.active{
-				    			background-color: #e9546b;
-				    			color: #fff;
-				    		}
-				    	}
-				    }
-				    .clearfix{
-				    	zoom: 1;
-				    }
-				    p{
-				    	line-height: 60px;
-    					margin-left: 18px;
-				    }
-				    .arrow-up{
-				    	display: none;
-					    position: absolute;
-					    top: 44px;
-					    right: 10px;
-					    z-index: 99999;
-					    width: 288px;
-					    border: 1px solid #e9546b;
-					    border-top: none;
-					    font-size: 14px;
-					    color: #515151;
-					    background-color: #fff;
-				    }
-			    }
-			    p{
-			    	width: 62px;
-				    height: 22px;
-				    line-height: 24px;
-				    text-align: center;
-				    font-size: 14px;
-				    color: #fff;
-				    cursor: pointer;
-				    border-right: 1px solid; 
-			    }
-			    span{
-			    	position: absolute;
-				    top: 10px;
-				    right: 20px;
-				    width: 10px;
-				    height: 5px;
-				    background-image: url(../img/icons/icon_arrow_down.png);
-				    background-repeat: no-repeat;
-				    background-size: cover;
-				    background-position: 50%;
-			    }
-	    	}
 	    	.basket{
 	    		position: absolute;
 			    right: 108px;
@@ -199,16 +111,112 @@ header{
 					    border: none;
 				    }
 			    }
+	    	}
+	    	.locator{
+	    		position: absolute;
+			    right: 0;
+			    bottom: 24px;
+			    width: 62px;
+			    height: 18px;
+			    padding-right: 20px;
+			    #peisong{
+			    	width: 155px;
+			    }
 			    .content{
+			    	display: none;
+				    position: absolute;
+				    top: 44px;
+				    right: 10px;
+				    z-index: 99999;
+				    width: 212px;
+				    border: 1px solid #e9546b;
+				    border-top: none;
+				    font-size: 14px;
+				    color: #515151;
+				    background-color: #fff;
+				    ul{
+				    	width: 100%;
+				    	li{
+				    		&:hover{
+				    			background-color:#e9546b;
+				    			color: #fff;
+				    		}
+				    	}
+				    	li{
+				    		display: inline-block;
+						    float: left;
+						    width: 50px;
+						    height: 25px;
+						    margin: 0 0 15px 17px;
+						    line-height: 25px;
+						    text-align: center;
+						    border-radius: 2px;
+    						cursor: pointer;
+				    	}
+				    	li{
+				    		.active{
+				    			background-color: #e9546b;
+				    			color: #fff;
+				    		}
+				    	}
+				    }
+				    .clearfix{
+				    	zoom: 1;
+				    }
+				    p{
+				    	line-height: 20px;
+    					margin-left: 10px;
+				    }
+				    .arrow-up{
+				    	display: none;
+					    position: absolute;
+					    top: 44px;
+					    right: 10px;
+					    z-index: 99999;
+					    width: 288px;
+					    border: 1px solid #e9546b;
+					    border-top: none;
+					    font-size: 14px;
+					    color: #515151;
+					    background-color: #fff;
+				    }
+			    }
+			    #localCity{
+			    	width: 40px;
+				    height: 18px;
+				    line-height: 19px;
+				    text-align: center;
+				    font-size: 14px;
+				    color: #fff;
+				    cursor: pointer;
+				    border-right: 1px solid; 
+			    }
+			    span{
+			    	position: absolute;
+				    top: 8px;
+				    right: 61px;
+				    width: 10px;
+				    height: 5px;
+				    background-image: url(../img/icons/icon_arrow_down.png);
+				    background-repeat: no-repeat;
+				    background-size: cover;
+				    background-position: 50%;
+			    }
+	    	}
+	 
+	    	.content{
 			    	display: none;
 				    position: absolute;
 				    top: 41px;
 				    left: -120px;
 				    z-index: 99999;
-				    width: 300px;
+				    width: 212px;
 				    border: 1px solid #e9546b;
 				    border-top: none;
 				    background-color: #fff;
+				    p{
+				    	color: red;
+				    }
 				    .view-basket{
 				    	display: block;
 					    width: 100%;
@@ -232,7 +240,6 @@ header{
 					    background-position: 50%;
 				    }
 			    }
-	    	}
 	    	img{
 	    		margin-left: 21px;
 	    	}

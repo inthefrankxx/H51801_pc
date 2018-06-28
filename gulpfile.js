@@ -62,7 +62,7 @@ gulp.task("copy-css", function(){
 		.pipe(gulp.dest("./"+ dest +"/css"))
 		.pipe(connect.reload());
 });
-gulp.task("copy", ["copy-images", "copy-lib", "copy-mock", "copy-css"]);
+gulp.task("copy", ["copy-images", "copy-lib", "copy-mock"]);
 
 // 监视任务
 gulp.task('watch', function () {

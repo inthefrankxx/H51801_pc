@@ -1,5 +1,9 @@
 require(["config"],function(){
 	require(["loadHF", "jquery","zoom"], function(promise,$){
-		$("img").elevateZoom();
+		$(".zoom").elevateZoom({
+			gallery:'gallery_01', 
+			cursor: 'pointer', 
+			galleryActiveClass: "active"
+		});
 	});
 });

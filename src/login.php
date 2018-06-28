@@ -4,7 +4,6 @@
 	$username = $_POST["username"];
 	$password = $_POST["password"];
 
-	echo '<meta charset="utf-8">';
 
 	/* 连接数据库，验证用户是否登录成功 */
 	// 创建连接
@@ -18,12 +17,12 @@
 	$sql = "SELECT uid, username FROM usering WHERE username='$username' AND password='$password'";
 	// 执行SQL命令
 	$result = mysql_query($sql);
-	// 处理查询结果集
-	if($row = mysql_fetch_array($result, MYSQL_ASSOC))
-		echo json_encode($row);
-	else
-		echo "没注册";
-
+	// 判断查询结果
+	if ($row = mysql_fetch_array($result, MYSQL_ASSOC)){
+		echo '{"res_code":0, "res_error":"", "res_body":'. json_encode($row) .'}';
+	} else {
+		echo '{"res_code":-1, "res_error":"用户名或密码错误", "res_body":{}}';
+	}
 	// 关闭连接
 	mysql_close();
  ?>

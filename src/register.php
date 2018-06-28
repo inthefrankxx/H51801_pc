@@ -19,18 +19,14 @@
 	$result = mysql_query($sql);
 
 	// 判断是否注册成功
-	if ($result) {
-		$sql = "SELECT uid, username FROM usering WHERE username='$username'";
-		$result = mysql_query($sql);
-		if ($row = mysql_fetch_array($result, MYSQL_ASSOC)) {
-			echo '{"res_code":0, "res_error":"", "res_body":'. json_encode($row) .'}';
-		} else {
-			echo '{"res_code":-1, "res_error":"注册用户信息查询失败", "res_body":{}}';
-		}
-	} else {
-		echo '{"res_code":-2, "res_error":"用户注册失败，请重新注册", "res_body":{}}';
+	// 判断
+	if ($result) { // 保存成功
+		$arr = array("res_code"=>1, "res_message"=>"注册成功");
+		echo json_encode($arr);
+	} else { // 失败
+		$arr = array("res_code"=>0, "res_message"=>"注册失败" . mysql_error());
+		echo json_encode($arr);
 	}
-
 	// 关闭数据库连接
 	mysql_close();
  ?>

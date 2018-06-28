@@ -1,5 +1,6 @@
 require(["config"], function(){
 	require(["loadHF","jquery","template","un","cookie","fly"], function(promise, $, template){
+		//轮播图
 		$(document).ready(function(e) {
 		    var unslider04 = $('#b04').unslider({
 		        dots: true
@@ -10,6 +11,16 @@ require(["config"], function(){
 		        var fn = this.className.split(' ')[1];
 		        data04[fn]();
 		    });
+		});
+		$(document).ready(function(){
+			$(".locator").click(function(){
+				$(".content").show();
+			});
+			$(".content").hover(function(){
+				$(".content").show();
+			},function(){
+				$(".content").hide();
+			});
 		});
 		$.getJSON("/mock/products.json",function(data){
 			// 使用 artTemplate 渲染
@@ -47,12 +58,12 @@ require(["config"], function(){
 			products[index].amount++;
 		// 将购物车再保存回 cookie 中
 		$.cookie("products", products, {expires:7, path:"/"});
-		var _text = Number($("#ShopCartNum").val());
+		let _text = Number($("#ShopCartNum").text());
 			_text++;
-		$("#ShopCartNum").val(_text);
+		$("#ShopCartNum").text(_text);
 		//加载购物车成功，抛物线
 		let end = $(".view").offset(),
-			flyer = $(`<img src="${prod.img}" style="z-index:99999;">`);
+			flyer = $(`<img src="${prod.img}" style="z-index:99999; width:100px; height:100px;">`);
 		flyer.fly({
 			start : {
 				left : e.pageX - $(window).scrollLeft(),

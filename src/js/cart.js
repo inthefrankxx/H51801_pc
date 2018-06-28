@@ -7,7 +7,7 @@ require(["config"],function(){
 	console.log(_products.length);
 	setTimeout(function(){
 		let num =$("#ShopCartNum");
-		num.val(parseInt(_products.length));
+		num.text(parseInt(_products.length));
 	},1000);
 	if (_products.length === 0) { // 没有购物车数据
 		$(".cart_empty").show()

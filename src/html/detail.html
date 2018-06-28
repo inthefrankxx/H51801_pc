@@ -10,49 +10,126 @@
 <body>
 	<header></header>
 	<main>
-		<div class="product_intro clearfix">
-			<div class="left">
-				<img src="/img/small.jpg" data-zoom-image="/img/big.jpg">
-			</div>
-			<div class="right">
-				<p class="title clearfix">
-                            <span class="cn">蓝莓优格</span>
-                            <span class="en">Blueberry Cheese cake</span>
+        <div class="product_intro">
+            <div class="left">
+                <div class="img">
+                    <img src="/img/zoom/middle1.jpg" data-zoom-image="/img/zoom/big1.jpg" class="zoom">
+                </div>
+                <div id="gallery_01">
+                        <a href="" class="active" data-image="/img/zoom/middle1.jpg" data-zoom-image="/img/zoom/big1.jpg">
+                            <img src="/img/zoom/small1.jpg">
+                        </a>
+                        <a href="" data-image="/img/zoom/middle2.jpg" data-zoom-image="/img/zoom/big2.jpg">
+                            <img src="/img/zoom/small2.jpg">
+                        </a>
+                         <a href="" data-image="/img/zoom/middle3.jpg" data-zoom-image="/img/zoom/big3.jpg">
+                            <img src="/img/zoom/small3.jpg">
+                        </a>
+                        <a href="" data-image="/img/zoom/middle4.jpg" data-zoom-image="/img/zoom/big4.jpg">
+                            <img src="/img/zoom/small4.jpg">
+                        </a>
+                    </div>
+            </div>
+            <div class="right">
+                <p class="title">
+                    <span class="cn">玛格丽特</span>
+                    <span class="en">Princess Margaret</span>
                 </p>
                 <div class="desc">
-                            <p>蓝莓优格永远保持一种特别优雅的格调。</p>                
+                    <p>吹拂的风都是玛格丽特柔软的芬芳。</p>
                 </div>
-                <div class="specific-wrap">
-                            <div class="section clearfix">
-                                <div class="title">规格：</div>
-                                <div class="content specifics clearfix">
-                                    <span class="spec  active" bangshu="1" price="198" sprice="267" bang="1.5" cw="640g" pic="http://img.incake.net/UpImages//201763/p2c171448932151557458.jpg" cweight="磅" danwei=".5" guige="14CM*14CM*5CM≈6寸" renshu="4-5人食用" tiqian="至少提前1天预定" qie="" canju="免费赠送5份餐具" cgprice="198">1.5磅</span><span class="spec " cgprice="298" bangshu="2" price="298" sprice="367" bang="2.5" cw="1.0kg" pic="http://img.incake.net/UpImages//201763/p2c171448932151557458.jpg" cweight="磅" danwei=".5" guige="17.5CM*17.5CM*5CM≈8寸" renshu="7-8人食用" tiqian="至少提前1天预定" qie="" canju="免费赠送10份餐具">2.5磅</span><span class="spec " cgprice="438" bangshu="3" price="438" sprice="438" bang="3.5" cw="1.5kg" pic="http://img.incake.net/UpImages//201763/p2c171448932151557458.jpg" cweight="磅" danwei=".5" guige="23CM*23CM*5CM≈12寸" renshu="11-12人食用" tiqian="至少提前1天预定" qie="" canju="免费赠送15份餐具">3.5磅</span><span class="spec " cgprice="728" bangshu="5" price="728" sprice="728" bang="5.5" cw="2.4kg" pic="http://img.incake.net/UpImages//201763/p2c171448932151557458.jpg" cweight="磅" danwei=".5" guige="30CM*30CM*5CM≈14寸" renshu="15-20人食用" tiqian="至少提前3天" qie="" canju="免费赠送20份餐具">5.5磅</span>
+                <div class="specific_wrap">
+                    <div class="section">
+                        <div class="titles">规格：</div>
+                        <div class="specifics">
+                            <span class="spec">1.5磅</span>
+                            <span class="spec">2.5磅</span>
+                            <span class="spec">3.5磅</span>
+                            <span class="spec">5.5磅</span>
+                        </div>
+                    </div>
+                    <div class="section">
+                        <div class="titles">款项：</div>
+                        <div class="detail">
+                            <span class="price">￥<i id="price">198</i></span>
+                            <span class="name">常规款</span>
+                            <span class="radio"></span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="tips">
+                    <li>
+                        <p id="guige">14CM*14CM*5CM≈6寸，约640g</p>
+                    </li>
+                    <li>
+                        <p id="canju">免费赠送5套餐具</p>
+                    </li>
+                    <li>
+                        <p id="renshu">适合4-5人食用</p>
+                    </li>
+                    <li>
+                        <p id="tiqian">至少提前1天预定</p>
+                    </li>
+                </ul>
+                <div class="amount">
+                    <div class="tit">数量</div>
+                    <div class="cont">
+                        <span class="btn btn-sub"></span>
+                        <div class="number">
+                            <input type="text" class="tex_amount" value="1">
+                        </div>
+                        <span class="btn btn-add"></span>
+                    </div>
+                </div>
+                <div class="addons">
+                    <ul>
+                        <li class="clearfix">
+                            <span class="ckbox"></span>
+                            <div class="img">
+                                    <img src="http://img.incake.net/UpImages/banner/2018626/p2c2018062611581460116.jpg">
+                            </div>
+                            <div class="content_2 clearfix">
+                                <div class="title vcenter">
+                                    <div class="vcenter-child">
+                                        <p>甄选礼盒系列.小步舞曲-平凡生活里的浪漫小惊喜</p>
+                                    </div>
                                 </div>
+                                <span class="price_2">¥129.00</span>
                             </div>
-                            <div class="section clearfix">
-                                <div class="title">款项：</div>
-                                <ul id="ContentID" class="content types">
-                                    <li class="checked regular clearfix"><span class="oldPrice" style="display:none">¥ <i id="Oldprice">198</i></span><span class="price">¥ <i id="price">198</i></span><span class="name">常规款</span><span class="radio"></span></li><li class="surprised clearfix"><span class="price">¥ <i id="sprice">267</i></span><span class="name">惊喜款</span><span class="radio"></span></li>
-                                </ul>
+                        </li>
+                        <li class="clearfix">
+                            <span class="ckbox"></span>
+                            <div class="img">
+                                <img src="http://img.incake.net/UpImages/banner/2018626/p2c2018062611530016060.jpg">
                             </div>
-                </div>
-                <div class="amount clearfix">
-                            <div class="title">数量：</div>
-                            <div class="content clearfix">
-                                <a href="javascript:;" class="btn btn-sub disabled"></a>
-                                <div class="amount-wrap">
-                                    <input type="text" class="txt-amount" value="1">
+                            <div class="content_2 clearfix">
+                                <div class="title vcenter">
+                                    <div class="vcenter-child">
+                                        <p>甄选礼盒系列.早安巴黎-90%用户首选的伴手礼</p>
+                                    </div>
                                 </div>
-                                <a href="javascript:;" class="btn btn-add"></a>
+                                <span class="price_2">¥149.00</span>
                             </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="operates clearfix">
-                            <a href="javascript:;" class="btn favor"><span class="img"></span><span class="txt">喜欢</span></a>
-                            
-                             <a href="javascript:; " class="btn add-basket">放入购物篮</a> <a href="javascript:; " class="btn buy-immediate">立即购买</a>
+                <div class="operates">
+                    <a href="javascript:void(0)" class="btn favor">
+                        <span class="img"></span>
+                        <span class="txt">喜欢</span>
+                    </a>
+                    <a href="javascript:void(0)" class="btn add_basket">放入购物篮</a>
+                    <a href="javascript:void(0)" class="btn buy">立即购买</a>
                 </div>
-			</div>
-		</div>
+                <div class="twocode">
+                    <img src="/img/021_689.png" class="pic">
+                    <p>手机下单及分享</p>
+                    <div class="qrcode">
+                        <img src="/img/021_689.png">
+                    </div>
+                </div>
+            </div>
+        </div>
 	</main>
 	<footer></footer>
 	<script src="/lib/requirejs/require.js" data-main="/js/detail"></script>

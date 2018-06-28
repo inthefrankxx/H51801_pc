@@ -9,7 +9,7 @@ require(["config"],function(){
 	}
 	 setTimeout(function(){
 		let num =$("#ShopCartNum");
-		num.val(parseInt(_products.length));
+		num.text(parseInt(_products.length));
 	},1000);
 	// 显示读取到的 cookie 购物车数据
 	let html = template("prod_list_temp", {products: _products});
